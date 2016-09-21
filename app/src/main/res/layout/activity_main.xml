@@ -13,8 +13,9 @@
 
     <LinearLayout
         android:id="@+id/team_a_container"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="vertical">
 
 
@@ -58,14 +59,14 @@
             android:onClick="addOneTeamA"
             android:text="@string/freethrowteama" />
         </LinearLayout>
+        <!---Closing tag for container Team A vertical layout-->
 
         <LinearLayout
             android:id="@+id/team_b_container"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
-
-
 
 
             <TextView
@@ -106,8 +107,8 @@
                 android:onClick="addOneTeamB"
                 android:text="@string/freethrowteamb" />
         </LinearLayout>
-
+<!--Closing tag for container Team B vertical layout-->
     </LinearLayout>
-
+<!--Closing tag for Teams container horizontal layout-->
 
 </RelativeLayout>
