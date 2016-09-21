@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ScoreKeeper</string>
+    <string name="threepointsteama">+3 points</string>
+    <string name="twopointsteama">+2 points</string>
+    <string name="freethrowteama">free throw</string>
+    <string name="threepointsteamb">+3 points</string>
+    <string name="twopointsteamb">+2 points</string>
+    <string name="freethrowteamb">free throw</string>
+</resources>
