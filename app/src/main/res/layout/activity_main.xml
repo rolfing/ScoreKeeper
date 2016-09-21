@@ -60,6 +60,11 @@
             android:text="@string/freethrowteama" />
         </LinearLayout>
         <!---Closing tag for container Team A vertical layout-->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#637a91" />
 
         <LinearLayout
             android:id="@+id/team_b_container"
