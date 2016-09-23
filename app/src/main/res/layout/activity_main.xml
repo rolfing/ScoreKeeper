@@ -6,6 +6,68 @@
     tools:context="com.example.android.scorekeeper.MainActivity">
 
     <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/team_miami_fouls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/miami_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/miamiredflag" />
+    </LinearLayout>
+<!--Closing tag for  layout miami flag and fouls point-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/team_lakers_fouls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingTop="10dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/lakers_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/lakersredflag" />
+        </LinearLayout>
+        <!--Closing tag for layout lakers flag and fouls-->
+    </LinearLayout>
+<!--Closing tag horizontal linear for header-->
+    <LinearLayout
         android:id="@+id/teams_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,20 +80,11 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/team_miami_fouls"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="26sp" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="2dp"
+                android:layout_margin="15dp"
                 android:src="@drawable/miamiheatlogo" />
 
 
@@ -89,21 +142,11 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/team_lakers_fouls"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:padding="10dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:onClick="addOneFoulslakers"
-                android:textSize="26sp" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="2dp"
+                android:layout_margin="15dp"
                 android:src="@drawable/lakers" />
 
 
@@ -177,7 +220,7 @@
             android:text="@string/fouls" />
 
     </LinearLayout>
-<!--Closing  horizontal linear for footer-->
+    <!--Closing  horizontal linear for footer-->
     <LinearLayout
         android:id="@+id/footer2"
         android:layout_width="match_parent"
@@ -188,14 +231,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="60dp"
-            android:paddingRight="60dp"
-            android:textSize="20sp"
             android:layout_gravity="center_horizontal"
             android:onClick="resetScore"
-            android:text="@string/reset"/>
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="@string/reset"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
-<!--Closing vertival linear layout for footer2-->
+    <!--Closing vertival linear layout for footer2-->
 </RelativeLayout>
