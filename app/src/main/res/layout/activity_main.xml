@@ -129,39 +129,34 @@
     <!--Closing tag for Teams container horizontal layout-->
 
     <LinearLayout
+        android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/teams_container"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/footer"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_margin="10dp"
             android:background="#663399"
             android:text="@string/fouls"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_margin="10dp"
             android:text="@string/reset"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_margin="10dp"
             android:background="#663399"
             android:text="@string/fouls"/>
 
     </LinearLayout>
-
-
-
 
 </RelativeLayout>
