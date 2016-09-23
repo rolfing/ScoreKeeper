@@ -6,4 +6,6 @@
     <string name="threepointsteamlakers">+3 points</string>
     <string name="twopointsteamlakers">+2 points</string>
     <string name="freethrowteamlakers">free throw</string>
+    <string name="fouls">Fouls</string>
+    <string name="reset">reset</string>
 </resources>
