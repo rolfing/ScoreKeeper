@@ -5,248 +5,248 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.scorekeeper.MainActivity">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal" >
-
-    <LinearLayout
-        android:id="@+id/header"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        android:gravity="start">
-
-        <TextView
-            android:id="@+id/team_miami_fouls"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:padding="10dp"
-            android:text="0"
-            android:textColor="#000000"
-            android:textSize="26sp" />
-
-        <ImageView
-            android:id="@+id/miami_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:src="@drawable/miamiredflag" />
-    </LinearLayout>
-<!--Closing tag for  layout miami flag and fouls point-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:gravity="end">
-
-        <ImageView
-            android:id="@+id/lakers_flag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:src="@drawable/lakersredflag" />
-
-        <TextView
-            android:id="@+id/team_lakers_fouls"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:paddingTop="10dp"
-            android:text="0"
-            android:textColor="#000000"
-            android:textSize="26sp" />
-
-
-        </LinearLayout>
-        <!--Closing tag for layout lakers flag and fouls-->
-    </LinearLayout>
-<!--Closing tag horizontal linear for header-->
-    <LinearLayout
-        android:id="@+id/teams_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
         <LinearLayout
-            android:id="@+id/team_miami_container"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="20dp"
-                android:src="@drawable/miamiheatlogo" />
-
-
-            <TextView
-                android:id="@+id/team_miami_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:gravity="center_horizontal"
-                android:paddingBottom="24dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="46sp" />
-
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:onClick="addThreeTeamA"
-                android:text="@string/threepointsteammiami" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:onClick="addTwoTeamA"
-                android:text="@string/twopointsteammiami" />
-
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:onClick="addOneTeamA"
-                android:text="@string/freethrowteammiami" />
-        </LinearLayout>
-        <!---Closing tag for container Miami team vertical layout-->
-        <View
-            android:layout_width="1dp"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:background="#637a91" />
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/team_miami_fouls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="26sp" />
+
+                <ImageView
+                    android:id="@+id/miami_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/miamiredflag" />
+            </LinearLayout>
+            <!--Closing tag for  layout miami flag and fouls point-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/lakers_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/lakersredflag" />
+
+                <TextView
+                    android:id="@+id/team_lakers_fouls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingTop="10dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="26sp" />
+
+
+            </LinearLayout>
+            <!--Closing tag for layout lakers flag and fouls-->
+        </LinearLayout>
+        <!--Closing tag horizontal linear for header-->
+        <LinearLayout
+            android:id="@+id/teams_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/team_miami_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/miamiheatlogo" />
+
+
+                <TextView
+                    android:id="@+id/team_miami_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="24dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="46sp" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addThreeTeamA"
+                    android:text="@string/threepointsteammiami" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addTwoTeamA"
+                    android:text="@string/twopointsteammiami" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addOneTeamA"
+                    android:text="@string/freethrowteammiami" />
+            </LinearLayout>
+            <!---Closing tag for container Miami team vertical layout-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#637a91" />
+
+            <LinearLayout
+                android:id="@+id/team_lakers_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/lakers" />
+
+
+                <TextView
+                    android:id="@+id/team_lakers_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="24dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="46sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addThreeTeamB"
+                    android:text="@string/threepointsteamlakers" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addTwoTeamB"
+                    android:text="@string/twopointsteamlakers" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:onClick="addOneTeamB"
+                    android:text="@string/freethrowteamlakers" />
+            </LinearLayout>
+            <!--Closing tag for container Lakers team vertical layout-->
+        </LinearLayout>
+        <!--Closing tag for Teams container horizontal layout-->
 
         <LinearLayout
-            android:id="@+id/team_lakers_container"
-            android:layout_width="0dp"
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_below="@+id/teams_container"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#663399"
+                android:onClick="addOneFoulsMiami"
+                android:text="@string/fouls" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="#663399"
+                android:onClick="addOneFoulslakers"
+                android:text="@string/fouls" />
+
+        </LinearLayout>
+        <!--Closing  horizontal linear for footer-->
+        <LinearLayout
+            android:id="@+id/footer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footer"
             android:orientation="vertical">
 
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="20dp"
-                android:src="@drawable/lakers" />
-
-
-            <TextView
-                android:id="@+id/team_lakers_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:gravity="center_horizontal"
-                android:paddingBottom="24dp"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="46sp" />
-
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:onClick="addThreeTeamB"
-                android:text="@string/threepointsteamlakers" />
+                android:layout_gravity="center_horizontal"
+                android:onClick="resetScore"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:text="@string/reset"
+                android:textSize="20sp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:onClick="addTwoTeamB"
-                android:text="@string/twopointsteamlakers" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:onClick="addOneTeamB"
-                android:text="@string/freethrowteamlakers" />
         </LinearLayout>
-        <!--Closing tag for container Lakers team vertical layout-->
-    </LinearLayout>
-    <!--Closing tag for Teams container horizontal layout-->
-
-    <LinearLayout
-        android:id="@+id/footer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/teams_container"
-        android:orientation="horizontal">
-
-        <Button
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="#663399"
-            android:onClick="addOneFoulsMiami"
-            android:text="@string/fouls" />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="#663399"
-            android:onClick="addOneFoulslakers"
-            android:text="@string/fouls" />
-
-    </LinearLayout>
-    <!--Closing  horizontal linear for footer-->
-    <LinearLayout
-        android:id="@+id/footer2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/footer"
-        android:orientation="vertical">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:onClick="resetScore"
-            android:paddingLeft="60dp"
-            android:paddingRight="60dp"
-            android:text="@string/reset"
-            android:textSize="20sp" />
-
-
-    </LinearLayout>
-    <!--Closing vertival linear layout for footer2-->
-</RelativeLayout>
+        <!--Closing vertival linear layout for footer2-->
+    </RelativeLayout>
 </ScrollView>
